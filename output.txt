@@ -1,0 +1,96 @@
+mlp模型在训练集和验证集上的准确率为：0.9463458110516936
+xgb模型在训练集和验证集上的准确率为：0.9404634581105169
+gbrt模型在训练集和验证集上的准确率为：0.95222816399287
+randomforest模型在训练集和验证集上的准确率为：0.9524064171122995
+
+加入测试集后的结果：
+----------------------------------------------------------------------------------------------------
+当前使用模型：MLPClassifier()
+
+训练集精度:
+0.9700598802395209
+
+测试集精度:
+0.7547169811320755
+
+分类识别报告:
+              precision    recall  f1-score   support
+
+         1.0       1.00      0.48      0.65        21
+         2.0       0.60      1.00      0.75        18
+         3.0       0.92      0.86      0.89        14
+
+    accuracy                           0.75        53
+   macro avg       0.84      0.78      0.76        53
+weighted avg       0.84      0.75      0.75        53
+
+----------------------------------------------------------------------------------------------------
+当前使用模型：XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, gpu_id=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              n_estimators=100, n_jobs=None, num_parallel_tree=None,
+              predictor=None, random_state=None, ...)
+
+训练集精度:
+0.9940119760479041
+
+测试集精度:
+0.7358490566037735
+
+分类识别报告:
+              precision    recall  f1-score   support
+
+         1.0       1.00      0.48      0.65        21
+         2.0       0.74      0.94      0.83        18
+         3.0       0.60      0.86      0.71        14
+
+    accuracy                           0.74        53
+   macro avg       0.78      0.76      0.73        53
+weighted avg       0.81      0.74      0.72        53
+
+----------------------------------------------------------------------------------------------------
+当前使用模型：GradientBoostingClassifier()
+训练集精度:
+0.9940119760479041
+
+测试集精度:
+0.7169811320754716
+
+分类识别报告:
+              precision    recall  f1-score   support
+
+         1.0       1.00      0.43      0.60        21
+         2.0       0.71      0.94      0.81        18
+         3.0       0.60      0.86      0.71        14
+
+    accuracy                           0.72        53
+   macro avg       0.77      0.74      0.71        53
+weighted avg       0.80      0.72      0.70        53
+
+----------------------------------------------------------------------------------------------------
+当前使用模型：RandomForestClassifier()
+
+训练集精度:
+0.9940119760479041
+
+测试集精度:
+0.7547169811320755
+
+分类识别报告:
+              precision    recall  f1-score   support
+
+         1.0       1.00      0.48      0.65        21
+         2.0       0.75      1.00      0.86        18
+         3.0       0.63      0.86      0.73        14
+
+    accuracy                           0.75        53
+   macro avg       0.79      0.78      0.74        53
+weighted avg       0.82      0.75      0.74        53
+
+----------------------------------------------------------------------------------------------------
